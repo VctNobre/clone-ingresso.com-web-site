@@ -11,7 +11,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="https://ingresso-a.akamaihd.net/catalog/Content/img/favicon-16x16-9d74d6aee7.png">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <script src="https://kit.fontawesome.com/b2bbee7ed8.js" crossorigin="anonymous"></script>
- 
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     
     <title>Ingresso.com - Fãs de cinema</title>
 </head>
@@ -59,7 +61,7 @@
         </div>
     </header>
     <main>
-        <section class="filme-principal">
+        <section class="section-container filme-principal">
             <div class=filme-principal-atributos>
                 <h2 class="filme-principal-titulo">king's Man: A Origem</h2>
                 <div>
@@ -68,7 +70,46 @@
                 </div>
             </div>
         </section>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit neque, animi dicta commodi impedit, ex ut assumenda, maiores totam dolore autem molestias minima adipisci corporis laboriosam exercitationem voluptates iste et. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium provident consequatur aliquam non animi, accusamus quibusdam modi dicta, voluptatibus exercitationem quo? Inventore eaque illo nesciunt exercitationem? Dolor, repellendus architecto. Fugiat?</p>
+        <section class="section-container">
+            <h2 class="section-titulo">Em alta</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Matrix Ressuretions</div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <section class="section-container">
+            <h2 class="section-titulo">Em cartaz</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
     </main>
     <footer>
         <div>
@@ -124,5 +165,7 @@
             </ul>
         </div>
     </footer>
+    <script src ="{% static 'scripts/swiper.js' %}">
+    </script>
 </body>
 </html>
