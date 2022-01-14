@@ -98,61 +98,65 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div>
-            <h2>Baixe Nosso App</h2>
-            <a href="" target="_blank"><img src="" alt=""></a>
-            <a href="" target="_blank"><img src="" alt=""></a>
-        </div>
+    <footer class="rodape">
+        <div class="rodape-container">
+            <div class="rodape-container-slide row">
+                <div>
+                    <h4>Baixe Nosso App</h4>
+                    <div>
+                        <img class="rodape-loja" src="{% static 'images/app-apple.svg' %}" alt="obtenha app-apple">
+                        <img class="rodape-loja google" src="{% static 'images/app-google.png' %}" alt="obtenha app-google">
+                    </div>
 
-        <div>Siga-nos nas redes</div>
+                </div>
+                <div>
+                    <h4>Siga-nos nas redes</h4>
+                    <img src="https://img.icons8.com/fluency/48/000000/youtube-play.png"/>
+                    <img src="https://img.icons8.com/fluency/48/000000/facebook.png"/>
+                    <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
+                </div>
+                <div>
+                    <h4>Precisa de Ajuda?</h4>
+                    <a href="#">Atendimento</a>
+                </div>
 
-        <div>    
-            <h2>Precisa de ajuda?</h2>
-            <button>Atendimento</button>
-        </div>
-        <div>
-            <h2>Menu</h2>
-            <ul>
-                <li><a href="">Filmes</a></li>
-                <li><a href="">Cinemas</a></li>
-                <li><a href="">Eventos</a></li>
-            </ul>
-        </div>
-        <div>
-            <h2>Institucional</h2>
-            <ul>
-                <li><a href="">Quem Somos</a></li>
-                <li><a href="">Assessoria de Imprensa</a></li>
-                <li><a href="">Bootstrap Ingresso.com</a></li>
-                <li><a href="">Vale-Presente Corporativo</a></li>
-                <li><a href="">Ingresso.com atende</a></li>
-                <li><a href="">movieID.com</a></li>
-                <li><a href="">Faça parte do time</a></li>
-            </ul>
-        </div>
-        <div>
-            <h2>Políticas</h2>
-            <ul>
-                <li><a href="">Prevenções</a></li>
-                <li><a href="">Privacidade e Seguranç</a>a</li>
-                <li><a href="">Política de Cookies</a></li>
-                <li><a href="">Meia-entrada</a></li>
-                <li><a href="">Trocas e Cancelamentos</a></li>
-                <li><a href="">Leis Estaduais e Municipais</a></li>
-                <li><a href="">Termos de Us</a>o</li>
-            </ul>
-        </div>
-        <div>
-            <h2>Dúvidas</h2>
-            <ul>
-                <li><a href="">Atendimento</a></li>
-                <li><a href="">Site ou e-mails falsos</a></li>
-                <li><a href="">Procon-RJ</a></li>
-            </ul>
+            </div>
+            <div class="rodape-container-slide row" >
+                <div class="rodape-container-slide gap-center">
+                    <h5>Menu</h5>
+                    <a href="#">Filmes</a>
+                    <a href="#">Cinemas</a>
+                    <a href="#">Eventos</a>
+                </div>
+                <div class="rodape-container-slide gap-center">
+                    <h5>Institucional</h5>
+                    <a href="#">Quem Somos</a>
+                    <a href="#">Assessoria de imprensa</a>
+                    <a href="#">bootstrap ingresso.com</a>
+                    <a href="#">vale-presente Corporativo</a>
+                    <a href="#">ingresso.com atende</a>
+                    <a href="#">movieId.com</a>
+                    <a href="#">faça parte do time</a>
+                </div>
+                <div class="rodape-container-slide gap-center">
+                    <h5>Políticas</h5>
+                    <a href="#">Prevenções</a>
+                    <a href="#">Privacidade e Segurança</a>
+                    <a href="#">Política de Cookies</a>
+                    <a href="#">Meia-entrada</a>
+                    <a href="#">Trocas e Cancelamentos</a>
+                    <a href="#">Leis Estaduais e Municipais</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+                <div class="rodape-container-slide gap-center">
+                    <h5>Dúvidas</h5>
+                    <a href="#">Atendimento</a>
+                    <a href="#">Site ou e-mails falsos</a>
+                    <a href="#">Procon-RJ</a>
+                </div>
+            <div>
         </div>
     </footer>
-    <script src ="{% static 'scripts/swiper.js' %}">
-    </script>
+    <script src ="{% static 'scripts/swiper.js' %}"></script>
 </body>
 </html>
