@@ -152,26 +152,24 @@ body {
     display: block;
 }
 .swiper-slide {
+    color: #eee;
+    font-weight: bold;
+}
+
+.transicao {
     background-image: url('../images/matrix.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    color: #eee;
-    font-weight: bold;
-    padding: 1em;
+    background-size: 110%;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
     display: flex;
     align-items: end;
-}
-.transicao{
-    position: relative;
-    border: none;
-    overflow: hidden;
-    width: 40px;
-    margin: 10px;
-    transition: background-size 1s;
+    padding: 1em;
 }
 
-.transicao:hover{
+.transicao:hover {
     background-size: 125%;
 }
 
