@@ -10,12 +10,15 @@
     <link rel="icon" type="image/png" sizes="96x96" href="https://ingresso-a.akamaihd.net/catalog/Content/img/favicon-96x96-fbd1a601c9.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://ingresso-a.akamaihd.net/catalog/Content/img/favicon-16x16-9d74d6aee7.png">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
- 
+    <script src="https://kit.fontawesome.com/b2bbee7ed8.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     
     <title>Ingresso.com - Fãs de cinema</title>
 </head>
 <body>
-    <header>
+    <header class="cabecalho">
         <div class="top">
             <div class="left">
                     <a id="logo" href="index.html">
@@ -25,15 +28,10 @@
             </div>
             
             <div class="info">
-                <div class="search">
-                    <div class="icon"></div>
-                    <div class="input">
-                        <input type="text" placeholder="O que você procura?">
-                    </div>                  
-                </div>
-                <div class="city"><a href="">Localização</a></div>
-                <div class="login"><a href="">Cadastro</a></div>
-                <div class="support"><a href="">Atendimento</a></div>
+                <div><input type="search" class="info-busca" placeholder="O que deseja buscar?"></div>
+                <div class="city"><a class="info-links" href="#"><i class="fas fa-map-marker-alt"></i>Localização</a></div>
+                <div class="login"><a class="info-links" href="#"><i class="fas fa-user-plus"></i>Cadastro</a></div>
+                <div class="support"><a class="info-links"  href="#"><i class="far fa-question-circle"></i>Atendimento</a></div>
             </div>
     
         </div>
@@ -47,18 +45,66 @@
         <div class="bottom">
             <nav>          
              <ul id="menu">
-                <li><a href="">FILMES</a></li>
-                <li><a href="">CINEMAS</a></li>
-                <li><a href="">NOTÍCIAS</a></li>
-                <li><a href="">PREVENÇÕES</a></li>
-                <li><a href="">FANSHOP</a></li>
-                <li><a href="">ROCK IN RIO</a></li>
+                <li><a class="menu-link" href="#">FILMES</a></li>
+                <li><a class="menu-link" href="#">CINEMAS</a></li>
+                <li><a class="menu-link" href="#">NOTÍCIAS</a></li>
+                <li><a class="menu-link" href="#">PREVENÇÕES</a></li>
+                <li><a class="menu-link" href="#">FANSHOP</a></li>
+                <li><a class="menu-link" href="#">ROCK IN RIO</a></li>
             </ul>
             </nav>
         </div>
     </header>
     <main>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit neque, animi dicta commodi impedit, ex ut assumenda, maiores totam dolore autem molestias minima adipisci corporis laboriosam exercitationem voluptates iste et. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium provident consequatur aliquam non animi, accusamus quibusdam modi dicta, voluptatibus exercitationem quo? Inventore eaque illo nesciunt exercitationem? Dolor, repellendus architecto. Fugiat?</p>
+        <section class="section-container filme-principal">
+            <div class=filme-principal-atributos>
+                <h2 class="filme-principal-titulo">king's Man: A Origem</h2>
+                <div>
+                    <a class="filme-principal-categorias" href="#">AÇÂO</a>
+                    <a class="filme-principal-categorias" href="#">AVENTURA</a>
+                </div>
+            </div>
+        </section>
+        <section class="section-container">
+            <h2 class="section-titulo">Em alta</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Matrix Ressuretions</div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <section class="section-container">
+            <h2 class="section-titulo">Em cartaz</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                    <div class="swiper-slide">Matrix Ressuretions </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
     </main>
     <footer>
         <div>
@@ -114,5 +160,7 @@
             </ul>
         </div>
     </footer>
+    <script src ="{% static 'scripts/swiper.js' %}">
+    </script>
 </body>
 </html>
