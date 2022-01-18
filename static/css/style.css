@@ -180,31 +180,57 @@ body {
 }
 
 .rodape-container{
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 
-.rodape-container-slide{
+.rodape-container-frame{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: start;
-    padding: 2em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+.rodape-container-titulo {
+    color: #eee;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.rodape-container-link {
+    color: rgb(0, 153, 255);
+    font-size: 0.8em;
+}
+
+.gap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
 }
 
 .row{
     flex-direction: row;
 }
 
-.gap-center{
-    gap: 1em;
-    align-items: center;
-}
-
 .rodape-loja{
     width: 128px;
     height: 45px;
 }
+
+.rodape-container-atendimento {
+    border: 2px solid rgb(0, 153, 255);
+    border-radius: 5px;
+    color: rgb(0, 153, 255);
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.7em;
+}
+
 .google{
     border: 1px solid #999;
     border-radius: 6px;
