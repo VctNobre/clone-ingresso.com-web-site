@@ -100,7 +100,7 @@ body {
 }
 
 .section-container {
-    margin-bottom: 2em;
+    margin-bottom: 5em;
 }
 
 .section-titulo {
@@ -159,3 +159,37 @@ body {
     align-items: end;
 }
 
+.rodape{
+    background-color: #252525;
+}
+
+.rodape-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.rodape-container-slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding: 2em;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.gap-center{
+    gap: 1em;
+    align-items: center;
+}
+
+.rodape-loja{
+    width: 128px;
+    height: 45px;
+}
+.google{
+    border: 1px solid #999;
+    border-radius: 6px;
+}
