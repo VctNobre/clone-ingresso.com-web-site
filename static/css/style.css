@@ -152,7 +152,6 @@ body {
     display: block;
 }
 .swiper-slide {
-    color: #eee;
     font-weight: bold;
 }
 
@@ -171,6 +170,10 @@ body {
 
 .transicao:hover {
     background-size: 125%;
+}
+
+.transicao-link {
+    color: #eee;
 }
 
 .rodape{
