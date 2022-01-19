@@ -21,7 +21,7 @@
     <header class="cabecalho">
         <div class="top">
             <div class="left">
-                    <a id="logo" href="index.html">
+                <a id="logo" href="{% url 'index' %}">
                         <img src="https://ingresso-a.akamaihd.net/catalog/Content/img/favicon-32x32-0dc0466d1c.png" alt="" class="image">
                         <h1 class="titulo">ingresso.com</h1>
                     </a>
@@ -39,7 +39,7 @@
         <div class="bottom">
             <nav>          
              <ul id="menu">
-                <li><a class="menu-link" href="#">FILMES</a></li>
+                 <li><a class="menu-link" href="{% url 'filmes' %}">FILMES</a></li>
                 <li><a class="menu-link" href="#">CINEMAS</a></li>
                 <li><a class="menu-link" href="#">NOTÍCIAS</a></li>
                 <li><a class="menu-link" href="#">PREVENÇÕES</a></li>

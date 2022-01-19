@@ -1,0 +1,279 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name= "description" content="Procurando diversão? Confira agora a melhor programação. Sua Diversão Começa Aqui. Os Melhores Cinemas. Serviços: venda de ingressos, programação de cinemas, programação de filmes.">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://ingresso-a.akamaihd.net/catalog/Content/img/favicon-32x32-0dc0466d1c.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://ingresso-a.akamaihd.net/catalog/Content/img/favicon-96x96-fbd1a601c9.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://ingresso-a.akamaihd.net/catalog/Content/img/favicon-16x16-9d74d6aee7.png">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/filmes.css' %}">
+    <script src="https://kit.fontawesome.com/b2bbee7ed8.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <title>Filmes no cinema</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="top">
+            <div class="left">
+                <a id="logo" href="{% url 'index' %}">
+                        <img src="https://ingresso-a.akamaihd.net/catalog/Content/img/favicon-32x32-0dc0466d1c.png" alt="" class="image">
+                        <h1 class="titulo">ingresso.com</h1>
+                    </a>
+            </div>
+            
+            <div class="info">
+                <div><input type="search" class="info-busca" placeholder="O que deseja buscar?"></div>
+                <div class="city"><a class="info-links" href="#"><i class="fas fa-map-marker-alt"></i>Localização</a></div>
+                <div class="login"><a class="info-links" href="#"><i class="fas fa-user-plus"></i>Cadastro</a></div>
+                <div class="support"><a class="info-links"  href="#"><i class="far fa-question-circle"></i>Atendimento</a></div>
+            </div>
+    
+        </div>
+
+        <div class="bottom">
+            <nav>          
+             <ul id="menu">
+                 <li><a class="menu-link" href="{% url 'filmes' %}">FILMES</a></li>
+                <li><a class="menu-link" href="#">CINEMAS</a></li>
+                <li><a class="menu-link" href="#">NOTÍCIAS</a></li>
+                <li><a class="menu-link" href="#">PREVENÇÕES</a></li>
+                <li><a class="menu-link" href="#">FANSHOP</a></li>
+                <li><a class="menu-link" href="#">ROCK IN RIO</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="filmes-container">
+            <h1 class="filmes-titulo">Filmes</h1>
+            <div class="filmes-maps">
+                <a class="filmes-maps-link" href="#">Em Cartaz</a>
+                <a class="filmes-maps-link" href="#">Em Breve</a>
+            </div>
+            <div class="filmes-lista gap row">
+                <article class="filmes-lista-frame">
+                <a class="filmes-lista-link" href="#">
+                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
+                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
+                </a>
+                </article>
+
+                <article class="filmes-lista-frame">
+                <a class="filmes-lista-link" href="#">
+                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
+                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
+                </a>
+                </article>
+
+                <article class="filmes-lista-frame">
+                <a class="filmes-lista-link" href="#">
+                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
+                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
+                </a>
+                </article>
+
+                <article class="filmes-lista-frame">
+                <a class="filmes-lista-link" href="#">
+                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
+                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
+                </a>
+                </article>
+
+                <article class="filmes-lista-frame">
+                <a class="filmes-lista-link" href="#">
+                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
+                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
+                </a>
+                </article>
+
+                <article class="filmes-lista-frame">
+                <a class="filmes-lista-link" href="#">
+                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
+                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
+                </a>
+                </article>
+
+                <article class="filmes-lista-frame">
+                <a class="filmes-lista-link" href="#">
+                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
+                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
+                </a>
+                </article>
+
+                <article class="filmes-lista-frame">
+                <a class="filmes-lista-link" href="#">
+                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
+                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
+                </a>
+                </article>
+
+                <article class="filmes-lista-frame">
+                <a class="filmes-lista-link" href="#">
+                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
+                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
+                </a>
+                </article>
+
+                <article class="filmes-lista-frame">
+                <a class="filmes-lista-link" href="#">
+                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
+                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
+                </a>
+                </article>
+
+                <article class="filmes-lista-frame">
+                <a class="filmes-lista-link" href="#">
+                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
+                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
+                </a>
+                </article>
+
+                <article class="filmes-lista-frame">
+                <a class="filmes-lista-link" href="#">
+                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
+                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
+                </a>
+                </article>
+
+                <article class="filmes-lista-frame">
+                <a class="filmes-lista-link" href="#">
+                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
+                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
+                </a>
+                </article>
+
+                <article class="filmes-lista-frame">
+                <a class="filmes-lista-link" href="#">
+                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
+                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
+                </a>
+                </article>
+
+                <article class="filmes-lista-frame">
+                <a class="filmes-lista-link" href="#">
+                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
+                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
+                </a>
+                </article>
+
+                <article class="filmes-lista-frame">
+                <a class="filmes-lista-link" href="#">
+                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
+                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
+                </a>
+                </article>
+
+                <article class="filmes-lista-frame">
+                <a class="filmes-lista-link" href="#">
+                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
+                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
+                </a>
+                </article>
+
+                <article class="filmes-lista-frame">
+                <a class="filmes-lista-link" href="#">
+                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
+                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
+                </a>
+                </article>
+
+                <article class="filmes-lista-frame">
+                <a class="filmes-lista-link" href="#">
+                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
+                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
+                </a>
+                </article>
+                <article class="filmes-lista-frame">
+                <a class="filmes-lista-link" href="#">
+                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
+                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
+                </a>
+
+                </article>
+                <article class="filmes-lista-frame">
+                <a class="filmes-lista-link" href="#">
+                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
+                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
+                </a>
+
+                </article>
+                <article class="filmes-lista-frame">
+                <a class="filmes-lista-link" href="#">
+                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
+                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
+                </a>
+                </article>
+
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="rodape-container gap">
+            <div class="rodape-container-frame row">
+                <div class="gap">
+                    <h5 class="rodape-container-titulo">Baixe Nosso App</h5>
+                    <div class="gap row">
+                        <img class="rodape-loja" src="{% static 'images/app-apple.svg' %}" alt="obtenha app-apple">
+                        <img class="rodape-loja google" src="{% static 'images/app-google.png' %}" alt="obtenha app-google">
+                    </div>
+
+                </div>
+                <div class="gap">
+                    <h5 class="rodape-container-titulo">Siga-nos nas redes</h5>
+                    <div class="gap row">
+                        <img src="https://img.icons8.com/fluency/48/000000/youtube-play.png"/>
+                        <img src="https://img.icons8.com/fluency/48/000000/facebook.png"/>
+                        <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
+                    </div>
+                </div>
+                <div class="gap">
+                    <h5 class="rodape-container-titulo">Precisa de Ajuda?</h5>
+                    <a  class="rodape-container-atendimento" href="#">Atendimento</a>
+                </div>
+
+            </div>
+            <div class="rodape-container-frame row" >
+                <div class="rodape-container-frame gap">
+                    <h5 class="rodape-container-titulo">Menu</h5>
+                    <a class="rodape-container-link" href="#">Filmes</a>
+                    <a class="rodape-container-link" href="#">Cinemas</a>
+                    <a class="rodape-container-link" href="#">Eventos</a>
+                </div>
+                <div class="rodape-container-frame gap">
+                    <h5 class="rodape-container-titulo">Institucional</h5>
+                    <a class="rodape-container-link" href="#">Quem Somos</a>
+                    <a class="rodape-container-link" href="#">Assessoria de imprensa</a>
+                    <a class="rodape-container-link" href="#">bootstrap ingresso.com</a>
+                    <a class="rodape-container-link" href="#">vale-presente Corporativo</a>
+                    <a class="rodape-container-link" href="#">ingresso.com atende</a>
+                    <a class="rodape-container-link" href="#">movieId.com</a>
+                    <a class="rodape-container-link" href="#">faça parte do time</a>
+                </div>
+                <div class="rodape-container-frame gap">
+                    <h5 class="rodape-container-titulo">Políticas</h5>
+                    <a class="rodape-container-link" href="#">Prevenções</a>
+                    <a class="rodape-container-link" href="#">Privacidade e Segurança</a>
+                    <a class="rodape-container-link" href="#">Política de Cookies</a>
+                    <a class="rodape-container-link" href="#">Meia-entrada</a>
+                    <a class="rodape-container-link" href="#">Trocas e Cancelamentos</a>
+                    <a class="rodape-container-link" href="#">Leis Estaduais e Municipais</a>
+                    <a class="rodape-container-link" href="#">Termos de Uso</a>
+                </div>
+                <div class="rodape-container-frame gap">
+                    <h5 class="rodape-container-titulo">Dúvidas</h5>
+                    <a class="rodape-container-link" href="#">Atendimento</a>
+                    <a class="rodape-container-link" href="#">Site ou e-mails falsos</a>
+                    <a class="rodape-container-link" href="#">Procon-RJ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

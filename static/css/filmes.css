@@ -1,0 +1,45 @@
+.filmes-container {
+    padding: 150px 1% 5em 1%;
+}
+
+.filmes-titulo {
+    color: #eee;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.filmes-maps {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filmes-maps-link {
+    color: #eee;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 2rem;
+}
+
+.filmes-lista {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filmes-lista-frame {
+    box-sizing: border-box;
+    width: 140px;
+    margin-bottom: 2rem;
+}
+
+.filmes-lista-titulo{
+    word-break: break-word;
+    color: #eee;
+    font-size: 1rem;
+}
+
+.filmes-lista-imagem {
+    width: 140px; 
+    height: 200px;
+}
