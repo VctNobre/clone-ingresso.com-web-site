@@ -100,15 +100,17 @@ body {
 }
 
 .section-container {
-    margin-bottom: 5em;
+    margin-bottom: 4.5em;
+   
 }
 
 .section-titulo {
-    margin-left: 3rem;
-    margin-bottom: 1rem;
-    color: #eee;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
-
+    font-size: 95%;
+    font-weight:800;
 }
 
 .filme-principal{
@@ -119,7 +121,7 @@ body {
     display: flex;
     align-items: end;
     padding: 1.2rem;
-    box-shadow: inset 0px -90px 140px -15px #000000;
+    box-shadow: inset 0px -90px 140px -15px #333;
 }
 .filme-principal-atributos {
     display: flex;
@@ -137,6 +139,8 @@ body {
     padding: 0.3rem;
     font-size: 0.7em;
     font-weight: bold;
+    font-style: italic;
+    
 }
 
 .swiper {
@@ -146,13 +150,18 @@ body {
 
 .swiper-wrapper {
     gap: 1em;
-    margin-left: 3rem;
+    margin-left: 1.5rem;
 }
 .swiper-wrapper > a{
     display: block;
+    
 }
-.swiper-slide {
+.swiper-slide{
     font-weight: bold;
+}
+
+.swiper-slide a{
+    color:hsl(0, 0%, 100%);
 }
 
 .transicao {
@@ -162,7 +171,7 @@ body {
     background-size: 110%;
     width: 100%;
     height: 100%;
-    transition: all 1s;
+    transition: all .5s;
     display: flex;
     align-items: end;
     padding: 1em;
@@ -174,6 +183,55 @@ body {
 
 .transicao-link {
     color: #eee;
+}
+.wrapper h1{
+    display: flex;
+    align-self: flex-start;
+     
+ }
+.wrapper{
+    display: grid;
+    padding: 1.2rem;
+    padding-top: 0.3rem;
+    background-color: #333;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+
+}
+.wrapper h1  {
+    color: white;
+    text-align: left;
+    font-size: 115%;
+    padding-left: 1.5rem;
+   
+}
+.wrapper p{
+    color: white;
+    padding-left: 1.5rem;
+    padding-top: 0.8rem;
+    font-size: 90%;
+}
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border: 1px solid #000000;
+    padding-top: 310px 
+}
+.box2 {
+    border: 1px solid #000000;
+}
+.box3{
+    border: 1px solid #000000;
+}
+.box4 {
+    border: 1px solid #000000;
+}
+.box5 {
+    border: 1px solid #000000;
 }
 
 .rodape{
