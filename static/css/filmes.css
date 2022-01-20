@@ -16,20 +16,20 @@
 }
 
 .filmes-maps-link {
-    color: #eee;
+    color: rgb(0, 153, 255);
     font-size: 1.2rem;
     font-weight: bold;
     margin-right: 2rem;
+    padding: 1rem;
 }
 
 .maps-active {
     border-bottom: 3px solid rgb(255, 115, 0);
-    padding: 1rem;
     color: rgb(255, 115, 0)
 }
 
 .filmes-inativo {
-    display: none;
+    display: none !important;
 }
 
 .filmes-lista {
