@@ -22,6 +22,16 @@
     margin-right: 2rem;
 }
 
+.maps-active {
+    border-bottom: 3px solid rgb(255, 115, 0);
+    padding: 1rem;
+    color: rgb(255, 115, 0)
+}
+
+.filmes-inativo {
+    display: none;
+}
+
 .filmes-lista {
     display: flex;
     flex-wrap: wrap;
