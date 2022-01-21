@@ -63,19 +63,9 @@
             <h2 class="section-titulo">Em alta</h2>
             <div class="swiper em-alta">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><div class="transicao"><a class="transicao-link" href="#">Matrix Ressuretions</a></div></div>
-                    <div class="swiper-slide"><div class="transicao"><a class="transicao-link" href="#">Matrix Ressuretions</a></div></div>
-                    <div class="swiper-slide"><div class="transicao"><a class="transicao-link" href="#">Matrix Ressuretions</a></div></div>
-                    <div class="swiper-slide"><div class="transicao"><a class="transicao-link" href="#">Matrix Ressuretions</a></div></div>
-                    <div class="swiper-slide"><div class="transicao"><a class="transicao-link" href="#">Matrix Ressuretions</a></div></div>
-                    <div class="swiper-slide"><div class="transicao"><a class="transicao-link" href="#">Matrix Ressuretions</a></div></div>
-                    <div class="swiper-slide"><div class="transicao"><a class="transicao-link" href="#">Matrix Ressuretions</a></div></div>
-                    <div class="swiper-slide"><div class="transicao"><a class="transicao-link" href="#">Matrix Ressuretions</a></div></div>
-                    <div class="swiper-slide"><div class="transicao"><a class="transicao-link" href="#">Matrix Ressuretions</a></div></div>
-                    <div class="swiper-slide"><div class="transicao"><a class="transicao-link" href="#">Matrix Ressuretions</a></div></div>
-                    <div class="swiper-slide"><div class="transicao"><a class="transicao-link" href="#">Matrix Ressuretions</a></div></div>
-                    <div class="swiper-slide"><div class="transicao"><a class="transicao-link" href="#">Matrix Ressuretions</a></div></div>
-                    <div class="swiper-slide"><div class="transicao"><a class="transicao-link" href="#">Matrix Ressuretions</a></div></div>
+                    {% for filme in filmes %}
+                    <div class="swiper-slide"><div style="background-image: url('{{ filme.imagem_font }}')" class="transicao"><a  class="transicao-link" href="#">{{ filme.nome_filme }}</a></div></div>
+                    {% endfor %} 
                 </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
