@@ -105,7 +105,7 @@ body {
 }
 
 .section-titulo {
-    margin-left: 1.5rem;
+    margin-left: 26px;
     margin-bottom: 1.5rem;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
@@ -148,16 +148,17 @@ body {
     height: 356px;
 }
 
-.swiper-wrapper {
-    gap: 1em;
-    margin-left: 1.5rem;
-}
 .swiper-wrapper > a{
     display: block;
     
 }
 .swiper-slide{
     font-weight: bold;
+    width: 17%;
+}
+
+.swiper-button-disabled{
+    display: none;
 }
 
 .swiper-slide a{

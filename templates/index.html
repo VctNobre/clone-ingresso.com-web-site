@@ -9,12 +9,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://ingresso-a.akamaihd.net/catalog/Content/img/favicon-32x32-0dc0466d1c.png">
     <link rel="icon" type="image/png" sizes="96x96" href="https://ingresso-a.akamaihd.net/catalog/Content/img/favicon-96x96-fbd1a601c9.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://ingresso-a.akamaihd.net/catalog/Content/img/favicon-16x16-9d74d6aee7.png">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <script src="https://kit.fontawesome.com/b2bbee7ed8.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>Ingresso.com - Fãs de cinema</title>
 </head>
 <body>
@@ -64,7 +64,7 @@
             <div class="swiper em-alta">
                 <div class="swiper-wrapper">
                     {% for filme in filmes %}
-                    <div class="swiper-slide"><div style="background-image: url('{{ filme.imagem_font }}')" class="transicao"><a  class="transicao-link" href="#">{{ filme.nome_filme }}</a></div></div>
+                        <div class="swiper-slide"><div style="background-image: url('{{ filme.imagem_font }}')" class="transicao"><a  class="transicao-link" href="#">{{ filme.nome_filme }}</a></div></div>
                     {% endfor %} 
                 </div>
                 <div class="swiper-button-prev"></div>
