@@ -58,83 +58,14 @@
                 <a class="filmes-maps-link" href="#" id="breve">Em Breve</a>
             </div>
             <div class="filmes-lista gap row" id="lista-cartaz">
-                <article class="filmes-lista-frame">
-                <a class="filmes-lista-link" href="#">
-                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
-                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
-                </a>
-                </article>
-
-                <article class="filmes-lista-frame">
-                <a class="filmes-lista-link" href="#">
-                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
-                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
-                </a>
-                </article>
-
-                <article class="filmes-lista-frame">
-                <a class="filmes-lista-link" href="#">
-                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
-                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
-                </a>
-                </article>
-
-                <article class="filmes-lista-frame">
-                <a class="filmes-lista-link" href="#">
-                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
-                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
-                </a>
-                </article>
-
-                <article class="filmes-lista-frame">
-                <a class="filmes-lista-link" href="#">
-                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
-                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
-                </a>
-                </article>
-
-                <article class="filmes-lista-frame">
-                <a class="filmes-lista-link" href="#">
-                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
-                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
-                </a>
-                </article>
-
-                <article class="filmes-lista-frame">
-                <a class="filmes-lista-link" href="#">
-                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
-                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
-                </a>
-                </article>
-
-                <article class="filmes-lista-frame">
-                <a class="filmes-lista-link" href="#">
-                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
-                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
-                </a>
-                </article>
-
-                <article class="filmes-lista-frame">
-                <a class="filmes-lista-link" href="#">
-                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
-                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
-                </a>
-                </article>
-
-                <article class="filmes-lista-frame">
-                <a class="filmes-lista-link" href="#">
-                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
-                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
-                </a>
-                </article>
-
-                <article class="filmes-lista-frame">
-                <a class="filmes-lista-link" href="#">
-                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
-                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
-                </a>
-                </article>
-
+                {% for filme in filmes %}
+                    <article class="filmes-lista-frame">
+                    <a class="filmes-lista-link" href="#">
+                        <img class="filmes-lista-imagem" src="{{ filme.imagem_font }}" alt="">
+                        <h1 class="filmes-lista-titulo">{{ filme.nome_filme }}</h1>
+                    </a>
+                    </article>
+                {% endfor %}
             </div>
             <div class="filmes-lista gap row filmes-inativo" id="lista-breve">
                 <article class="filmes-lista-frame">
