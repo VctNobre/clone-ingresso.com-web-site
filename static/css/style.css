@@ -192,47 +192,53 @@ body {
  }
 .wrapper{
     display: grid;
-    padding: 1.2rem;
+    padding: 1.5rem;
     padding-top: 0.3rem;
     background-color: #333;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
-    grid-column-gap: 10px;
-    grid-row-gap: 1em;
-
+    grid-template-columns: 680px 300px 300px  ;
+    grid-auto-rows: 220px;
+    grid-gap: 15px;
+    max-width: 800px;
+    justify-content: start;
 }
-.wrapper h1  {
-    color: white;
-    text-align: left;
-    font-size: 115%;
-    padding-left: 1.5rem;
-   
-}
-.wrapper p{
-    color: white;
-    padding-left: 1.5rem;
-    padding-top: 0.8rem;
-    font-size: 90%;
-}
-.box1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
+.box:first-child{
+    display: grid;
     grid-row-start: 1;
     grid-row-end: 3;
-    border: 1px solid #000000;
-    padding-top: 310px 
 }
-.box2 {
-    border: 1px solid #000000;
+
+.box:first-child h1{
+    padding: 0px 0px 10px 20px;
+    font-size: 115%;
+    font-weight: 700;
+
 }
-.box3{
-    border: 1px solid #000000;
+
+.box:first-child p{
+    font-size: 90%;
+    padding: 0px 10px 20px 20px ;
 }
-.box4 {
+
+.box{
+    display: grid;
     border: 1px solid #000000;
+    justify-content: start;
+    align-content: flex-end;
+    row-gap: 1px;
+    
 }
-.box5 {
-    border: 1px solid #000000;
+.box h1{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-weight: 700;
+    padding: 0px 0px 0px 10px;
+    font-size: 90%; 
+
+}
+.box p{
+    color: rgba(255, 255, 255, 0.795);
+    padding: 5px 0px 10px 10px;
+    font-size: 80%;  
 }
 
 .rodape{
