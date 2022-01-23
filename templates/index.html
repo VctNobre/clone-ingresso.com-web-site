@@ -50,9 +50,11 @@
         </div>
     </header>
     <main>
-        <section class="section-container filme-principal">
+        <section class="section-container filme-principal" style="background-image: url('{{ banner.principal_imagem_font }}')">
             <div class=filme-principal-atributos>
-                <h2 class="filme-principal-titulo">King's Man: A Origem</h2>
+
+                <h2 class="filme-principal-titulo"> {{ banner.nome_filme }} </h2>
+               
                 <div>
                     <a class="filme-principal-categorias" href="#">AÇÂO</a>
                     <a class="filme-principal-categorias" href="#">AVENTURA</a>
@@ -72,7 +74,12 @@
             </div>
         </section>
         <section class="section-container">
+            <div class="section-align">
             <h2 class="section-titulo">Em cartaz</h2>
+            <a href="{% url 'filmes' %}">
+                <p class="ver-todos">ver todos</p>
+            </a></div>
+            
             <div class="swiper">
                 <div class="swiper-wrapper">
                     {% for filme in filmes_cartaz %}
@@ -84,7 +91,13 @@
             </div>
         </section>
         <section>
-            <h2 class="section-titulo">Notícias em alta</h2>
+            <div class="section-align">
+              <h2 class="section-titulo">Notícias em alta</h2>
+            <a href="#">
+                <p class="ver-todos">ver todos</p>
+            </a>  
+            </div>
+            
             <div class="wrapper">
                 {% for noticia in noticias %}
                <a href="#" class="box" style="background-image: url('{{noticia.imagem}}')">
@@ -93,7 +106,42 @@
                </a>
                {% endfor %}
             </div>
-
+        </section>
+        <section class="section-fanshop">
+            <div class="section-align a1">
+                <h2 class="section-titulo a1-1">Fanshop</h2>
+                <a href="#">
+                    <p class="ver-todos">ver todos</p>
+                </a>
+            </div>
+            <div class="fanshop-descricao"><p>Os produtos dos seus personagens favoritos estão aqui!</p></div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div><a href="#">
+                                <img src="../static/images/de volta para a matrix produto.jpg" alt="de volta para a matrix camisa">
+                            </a></div>
+                        </div> 
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <section>
+            <div class="section-align a2">
+                <h2 class="section-titulo">Em breve</h2>
+                <a href="#">
+                    <p class="ver-todos">ver todos</p>
+                </a>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div><a href="#">
+                                <img src="" alt="">
+                            </a></div>
+                        </div> 
+                </div>
         </section>
     </main>
     <footer class="rodape">
@@ -102,17 +150,17 @@
                 <div class="gap">
                     <h5 class="rodape-container-titulo">Baixe Nosso App</h5>
                     <div class="gap row">
-                        <img class="rodape-loja" src="{% static 'images/app-apple.svg' %}" alt="obtenha app-apple">
-                        <img class="rodape-loja google" src="{% static 'images/app-google.png' %}" alt="obtenha app-google">
+                        <a href="https://apps.apple.com/br/app/ingresso-com/id1165054492" target="_blank"><img class="rodape-loja" src="{% static 'images/app-apple.svg' %}" alt="obtenha app-apple"></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.ingresso.cinemas&hl=pt_BR" target="_blank"><img class="rodape-loja google" src="{% static 'images/app-google.png' %}" alt="obtenha app-google"></a>
                     </div>
 
                 </div>
                 <div class="gap">
                     <h5 class="rodape-container-titulo">Siga-nos nas redes</h5>
                     <div class="gap row">
-                        <img src="https://img.icons8.com/fluency/48/000000/youtube-play.png"/>
-                        <img src="https://img.icons8.com/fluency/48/000000/facebook.png"/>
-                        <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
+                        <a href="https://www.youtube.com/user/Ingressocom" target="_blank"><img src="https://img.icons8.com/fluency/48/000000/youtube-play.png"/></a>
+                        <a href="https://www.facebook.com/ingressocom/" target="_blank"><img src="https://img.icons8.com/fluency/48/000000/facebook.png"/></a>
+                        <a href="https://www.instagram.com/ingressocom/" target="_blank"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a>
                     </div>
                 </div>
                 <div class="gap">

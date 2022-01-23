@@ -39,7 +39,7 @@ body {
 }
 
 .info i {
-    color: rgb(0, 153, 255);
+    color:#09f;;
     margin-right: 5px;
 }
 
@@ -68,7 +68,7 @@ body {
     font-size: 2.0rem;
     font-style: normal;
     text-decoration: none;
-    color: #3478C1;
+    color: #4292e9;
     
 }
 
@@ -95,14 +95,26 @@ body {
 
 .menu-link {
     font-weight: bold;
-    color: rgb(0, 153, 255);
+    color: #09f;;
 
 }
 
 .section-container {
     margin-bottom: 4.5em;
-   
 }
+.section-align{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+   align-items: baseline;
+
+}
+.section-align p{
+    padding-left: 20px;
+    text-shadow: 1px 1px 2px rgb(39, 39, 39);   
+
+}
+
 
 .section-titulo {
     margin-left: 26px;
@@ -110,18 +122,24 @@ body {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-size: 95%;
-    font-weight:800;
+    font-weight:750;
+    text-shadow: 1px 1px 2px rgb(39, 39, 39); 
+    
+}
+.ver-todos{
+    color: #09f;
+    font-size: 90%;
 }
 
 .filme-principal{
-    background-image: url('../images/kings-man.jpg');
     background-size: cover;
     width: 100%;
     height: 500px;
     display: flex;
     align-items: end;
     padding: 1.2rem;
-    box-shadow: inset 0px -90px 140px -15px #333;
+    box-shadow: inset 0px -40px 100px 0px rgb(26, 26, 26);
+    background-position: center;
 }
 .filme-principal-atributos {
     display: flex;
@@ -131,6 +149,8 @@ body {
 
 .filme-principal-titulo {
     color: #eee;
+    font-size: 180%;
+    font-weight: 600;
 }
 
 .filme-principal-categorias {
@@ -242,6 +262,22 @@ body {
     font-size: 80%;  
 }
 
+.section-fanshop{
+    background-color: #252525;
+}
+.fanshop-descricao{
+    color: white;
+    font-size: 75%;
+    padding: 0px 0px 20px 26px;
+    
+}
+.a1{
+    padding-top: 20px;
+}
+
+.a2{
+    padding-top: 50px;
+}
 .rodape{
     background-color: #252525;
 }
