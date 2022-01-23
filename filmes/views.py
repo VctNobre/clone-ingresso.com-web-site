@@ -5,9 +5,11 @@ import json
 def index(request):
     filmes_cartaz = requests.get('https://ingressoapi.herokuapp.com/filmes/cartaz/') 
     filmes_alta = requests.get('https://ingressoapi.herokuapp.com/filmes/alta/') 
+    noticias = requests.get('https://ingressoapi.herokuapp.com/noticias/')
     dados = {
         'filmes_cartaz': json.loads(filmes_cartaz.content),
         'filmes_alta': json.loads(filmes_alta.content),
+        'noticias':json.loads(noticias.content),
     }
     return render(request, 'index.html', dados)
 
