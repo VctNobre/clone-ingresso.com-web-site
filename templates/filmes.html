@@ -68,48 +68,14 @@
                 {% endfor %}
             </div>
             <div class="filmes-lista gap row filmes-inativo" id="lista-breve">
-                <article class="filmes-lista-frame">
-                <a class="filmes-lista-link" href="#">
-                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
-                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
-                </a>
-                </article>
-                <article class="filmes-lista-frame">
-                <a class="filmes-lista-link" href="#">
-                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
-                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
-                </a>
-                </article>
-                <article class="filmes-lista-frame">
-                <a class="filmes-lista-link" href="#">
-                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
-                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
-                </a>
-                </article>
-                <article class="filmes-lista-frame">
-                <a class="filmes-lista-link" href="#">
-                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
-                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
-                </a>
-                </article>
-                <article class="filmes-lista-frame">
-                <a class="filmes-lista-link" href="#">
-                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
-                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
-                </a>
-                </article>
-                <article class="filmes-lista-frame">
-                <a class="filmes-lista-link" href="#">
-                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
-                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
-                </a>
-                </article>
-                <article class="filmes-lista-frame">
-                <a class="filmes-lista-link" href="#">
-                    <img class="filmes-lista-imagem" src="{% static 'images/matrix.jpg' %}" alt="">
-                    <h1 class="filmes-lista-titulo">Matrix Ressurections</h1>
-                </a>
-                </article>
+                {% for filme in filmes_breve %}
+                    <article class="filmes-lista-frame">
+                    <a class="filmes-lista-link" href="#">
+                        <img class="filmes-lista-imagem" src="{{ filme.imagem_font }}" onerror="this.onerror=null;this.src='https://ingresso-a.akamaihd.net/catalog/Content/img/placeholder-movie-image-4359a6ad34.jpg';" alt="">
+                        <h1 class="filmes-lista-titulo">{{ filme.titulo }}</h1>
+                    </a>
+                    </article>
+                {% endfor %}
             </div>
         </section>
     </main>

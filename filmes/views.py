@@ -18,7 +18,9 @@ def index(request):
 
 def filmes(request):
     todos_filmes = requests.get('https://ingressoapi.herokuapp.com/filmes/')
+    filmes_em_breve = requests.get('https://ingressoapi.herokuapp.com/filmes/breve/')
     dados = {
-        'filmes': json.loads(todos_filmes.content)
+        'filmes': json.loads(todos_filmes.content),
+        'filmes_breve': json.loads(filmes_em_breve.content),
     }
     return render(request, 'filmes.html', dados)
