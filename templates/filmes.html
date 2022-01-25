@@ -71,7 +71,15 @@
                 {% for filme in filmes_breve %}
                     <article class="filmes-lista-frame">
                     <a class="filmes-lista-link" href="#">
-                        <img class="filmes-lista-imagem" src="{{ filme.imagem_font }}" onerror="this.onerror=null;this.src='https://ingresso-a.akamaihd.net/catalog/Content/img/placeholder-movie-image-4359a6ad34.jpg';" alt="">
+                        <div class="filmes-lista-filme">
+                            <img class="filmes-lista-imagem" src="{{ filme.imagem_font }}" onerror="this.onerror=null;this.src='https://ingresso-a.akamaihd.net/catalog/Content/img/placeholder-movie-image-4359a6ad34.jpg';" alt="">
+
+                            <div class="filmes-lista-data">
+                                {% if filme.data_lancamento %}
+                                    <span>{{filme.data_lancamento}}</span>
+                                {% endif %}
+                            </div>
+                        </div>
                         <h1 class="filmes-lista-titulo">{{ filme.titulo }}</h1>
                     </a>
                     </article>
