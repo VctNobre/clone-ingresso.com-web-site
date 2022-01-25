@@ -99,6 +99,10 @@ body {
 
 }
 
+.menu-link:hover{
+    color: rgb(1, 132, 219);
+}
+
 .section-container {
     margin-bottom: 4.5em;
 }
@@ -115,7 +119,6 @@ body {
 
 }
 
-
 .section-titulo {
     margin-left: 26px;
     margin-bottom: 1.5rem;
@@ -130,6 +133,10 @@ body {
     color: #09f;
     font-size: 90%;
 }
+ .ver-todos:hover{
+    color: rgb(1, 132, 219);
+ }
+
 
 .filme-principal{
     background-size: cover;
@@ -186,7 +193,6 @@ body {
 }
 
 .transicao {
-    background-image: url('../images/matrix.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 110%;
@@ -278,6 +284,66 @@ body {
 .a2{
     padding-top: 50px;
 }
+
+.fanshop{
+    height: 980px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.align-data{
+    display: grid;
+    grid-template-columns: 2fr; 
+    grid-template-rows: 100px; 
+    justify-content: flex-start;
+    align-content: flex-end;
+    grid-gap: 10px;
+}
+.data{
+    display: grid;
+    border: 1px solid white;
+    font-size: 80%;
+    padding: 5px;
+    width: 80px;
+}
+
+.promo{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-auto-rows: 350px;
+    grid-gap: 15px;
+    max-width: 1800px;   
+    padding: 0px 0px 30px 26px;
+}
+.promo-box{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-content: flex-end;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 20px;
+    
+}
+.promo-box h1{
+    color: #09f;
+    height: min-content;
+    
+}
+.promo-box h2{
+    height: min-content;
+    color: white;
+    font-size: 85%;
+    font-weight: normal;
+    padding: 0px 0px 5px 0px;
+}
+.promo-box p{
+    
+    color:gray;
+    font-size: 60%;
+    padding: 10px 0px 10px 0px;
+
+}
+
 .rodape{
     background-color: #252525;
 }

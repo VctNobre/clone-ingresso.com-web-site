@@ -37,7 +37,7 @@
         </div>
 
         <div class="bottom">
-            <nav>          
+            <nav class="nav">          
              <ul id="menu">
                  <li><a class="menu-link" href="{% url 'filmes' %}">FILMES</a></li>
                 <li><a class="menu-link" href="#">CINEMAS</a></li>
@@ -83,7 +83,11 @@
             <div class="swiper">
                 <div class="swiper-wrapper">
                     {% for filme in filmes_cartaz %}
-                        <div class="swiper-slide"><div style="background-image: url('{{ filme.imagem_font }}')" class="transicao"><a  class="transicao-link" href="#">{{ filme.nome_filme }}</a></div></div>
+                    <div class="swiper-slide">
+                        <div style="background-image: url('{{ filme.imagem_font }}')" class="transicao">
+                            <a class="transicao-link" href="#">{{ filme.nome_filme }}</a>
+                        </div>
+                    </div>
                     {% endfor %} 
                 </div>
                 <div class="swiper-button-prev"></div>
@@ -117,11 +121,13 @@
             <div class="fanshop-descricao"><p>Os produtos dos seus personagens favoritos estão aqui!</p></div>
             <div class="swiper">
                 <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div><a href="#">
-                                <img src="../static/images/de volta para a matrix produto.jpg" alt="de volta para a matrix camisa">
-                            </a></div>
+                    {% for fanshop in fan_shop %}
+                        <div class="swiper-slide" style="width: 45%">
+                            <div style="background-image: url('{{fanshop.imagem_font}}')" class="fanshop">         
+                                <a href="#" ></a>                         
+                            </div>
                         </div> 
+                        {% endfor %}
                 </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
@@ -130,18 +136,44 @@
         <section>
             <div class="section-align a2">
                 <h2 class="section-titulo">Em breve</h2>
-                <a href="#">
+                <a href="{% url 'filmes' %}">
                     <p class="ver-todos">ver todos</p>
                 </a>
             </div>
             <div class="swiper">
                 <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div><a href="#">
-                                <img src="" alt="">
-                            </a></div>
+                        {% for filmes in filmes_breve %}
+                        <div class="swiper-slide" >
+                            <div style="background-image: url('{{filmes.imagem_font}}')" class="transicao align-data">
+                                <a href="#" class="data">{{filmes.data_lancamento}}</a>
+                                <a href="#">{{filmes.titulo}}</a>
+                                
+                            </div>
                         </div> 
+                        {% endfor %}
                 </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            </div>    
+        </section>
+        <section>
+             <div class="section-align a2">
+                 <h2 class="section-titulo">Promoções</h2>
+                 <a href="#">
+                 <p class="ver-todos">ver todos</p>
+                 </a>
+            </div>
+            <div class="promo">
+                <a href="#" class="promo-box">                
+                     <h2>05 ingressos a partir de</h2>
+                    
+                     <h1>R$ 13,00 cada</h1>
+                   
+                    <p> &#128343 Válido até 31/03/2022</p>
+                </a>
+            </div>
+
+
         </section>
     </main>
     <footer class="rodape">
