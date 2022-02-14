@@ -1,0 +1,32 @@
+{% load static %}
+    <header class="cabecalho">
+        <div class="top">
+            <div class="left">
+                <a id="logo" href="{% url 'index' %}">
+                        <img src="https://ingresso-a.akamaihd.net/catalog/Content/img/favicon-32x32-0dc0466d1c.png" alt="" class="image">
+                        <h1 class="titulo">ingresso.com</h1>
+                    </a>
+            </div>
+            
+            <div class="info">
+                <div><input type="search" class="info-busca" placeholder="O que deseja buscar?"></div>
+                <div class="city"><a class="info-links" href="#"><i class="fas fa-map-marker-alt"></i>Localização</a></div>
+                <div class="login"><a class="info-links" href="#"><i class="fas fa-user-plus"></i>Cadastro</a></div>
+                <div class="support"><a class="info-links"  href="#"><i class="far fa-question-circle"></i>Atendimento</a></div>
+            </div>
+    
+        </div>
+
+        <div class="bottom">
+            <nav>          
+             <ul id="menu">
+                 <li><a class="menu-link" href="{% url 'filmes' %}">FILMES</a></li>
+                 <li><a class="menu-link" href="{% url 'cinemas' %}">CINEMAS</a></li>
+                <li><a class="menu-link" href="#">NOTÍCIAS</a></li>
+                <li><a class="menu-link" href="#">PREVENÇÕES</a></li>
+                <li><a class="menu-link" href="#">FANSHOP</a></li>
+                <li><a class="menu-link" href="#">ROCK IN RIO</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>

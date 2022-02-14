@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    {% include 'partials/header.html' %}
+    <main class="page-container">
+        <section class="">
+            <h1>Cinemas - São Paulo</h1>
+            <a href="#">Bairros</a>
+        </section>
+        <section>
+            <div>
+                <span>toggle</span>
+                <h2>Ver Cinemas Com Sessões</h2>
+            </div>
+            <div>
+                <h2>Retirada sem Contato</h2>
+                <h2>Distanciamento das Poltronas</h2>
+                <h2>Produto pelo site</h2>
+                <h2>Sistema X-Block - Distanciamento seguro entre os assentos</h2>
+            </div>
+        </section>
+        <section>
+            <h3>bairro</h3>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+    </main>
+
+    {% include 'partials/footer.html' %}
+{% endblock %}

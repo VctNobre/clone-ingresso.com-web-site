@@ -28,3 +28,7 @@ def filmes(request):
         'filmes_breve': json.loads(filmes_em_breve.content),
     }
     return render(request, 'filmes.html', dados)
+
+
+def cinemas(request):
+    return render(request, 'cinemas.html')
