@@ -4,26 +4,86 @@
     {% include 'partials/header.html' %}
     <main class="page-container">
         <section class="">
-            <h1>Cinemas - São Paulo</h1>
-            <a href="#">Bairros</a>
-        </section>
-        <section>
-            <div>
-                <span>toggle</span>
-                <h2>Ver Cinemas Com Sessões</h2>
-            </div>
-            <div>
-                <h2>Retirada sem Contato</h2>
-                <h2>Distanciamento das Poltronas</h2>
-                <h2>Produto pelo site</h2>
-                <h2>Sistema X-Block - Distanciamento seguro entre os assentos</h2>
+            <h1 class="filmes-titulo">Cinemas - São Paulo</h1>
+            <div class="filmes-maps">
+                <a href="#" class="filmes-maps-link maps-active">Bairros</a>
             </div>
         </section>
+        <section class="checkbox-legendas">
+            <div class="cinemas-com-sessoes">
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                <h2 class="cinemas-com-sessoes-titulo">Ver Cinemas Com Sessões</h2>
+            </div>
+            <div class="legendas">
+                <div class="legendas-wrapper gap">
+                    <div class="legendas-wrapper-frame">
+                        <img class="legendas-wrapper-frame-imagem" src="{% static 'images/combo.svg' %}" alt="">
+                        <p><nobr>retirada sem contato</nobr></p>
+                    </div>
+                    <div class="legendas-wrapper-frame">
+                        <img class="legendas-wrapper-frame-imagem" src="{% static 'images/smartphone.svg' %}" alt="">
+                        <p><nobr>produto pelo site</nobr></p>
+                    </div>
+                </div>
+                <div class="legendas-wrapper gap">
+                    <div class="legendas-wrapper-frame">
+                        <img class="legendas-wrapper-frame-imagem" src="{% static 'images/distanciamento.svg' %}" alt="">
+                        <p>distanciamento das poltronas</p>
+                    </div>
+                    <div class="legendas-wrapper-frame">
+                        <img class="legendas-wrapper-frame-imagem" src="{% static 'images/xblock.svg' %}" alt="">
+                        <p>Sistema X-Block - Distanciamento seguro entre os assentos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section>
-            <h3>bairro</h3>
-            <ul>
-                <li></li>
-                <li></li>
+            <div class="bairro">
+                <h3 class="bairro-titulo">bairro</h3>
+            </div>
+            <ul class="lista-cinemas">
+                <li class="cinema">
+                    <div class="cinema-coracao">
+                        <img src="{% static 'images/love.svg' %}" alt="coração">
+                    </div>
+                    <div>
+                        <h3 class="cinema-titulo">Cinemaaaa</h3>
+                        <p class="cinema-endereco">Endereço enrereço</p>
+                    </div>
+                    <div class="cinema-legendas">
+                        <img src="{% static 'images/combo.svg' %}" alt="">
+                        <img src="{% static 'images/smartphone.svg' %}" alt="">
+                    </div>
+                </li>
+                <li class="cinema">
+                    <div class="cinema-coracao">
+                        <img src="{% static 'images/love.svg' %}" alt="coração">
+                    </div>
+                    <div>
+                        <h3 class="cinema-titulo">Cinemaaaa</h3>
+                        <p class="cinema-endereco">Endereço enrereço</p>
+                    </div>
+                    <div class="cinema-legendas">
+                        <img src="{% static 'images/combo.svg' %}" alt="">
+                        <img src="{% static 'images/smartphone.svg' %}" alt="">
+                    </div>
+                </li>
+                <li class="cinema">
+                    <div class="cinema-coracao">
+                        <img src="{% static 'images/love.svg' %}" alt="coração">
+                    </div>
+                    <div>
+                        <h3 class="cinema-titulo">Cinemaaaa</h3>
+                        <p class="cinema-endereco">Endereço enrereço</p>
+                    </div>
+                    <div class="cinema-legendas">
+                        <img src="{% static 'images/combo.svg' %}" alt="">
+                        <img src="{% static 'images/smartphone.svg' %}" alt="">
+                    </div>
+                </li>
             </ul>
         </section>
     </main>

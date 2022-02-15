@@ -1,0 +1,165 @@
+.checkbox-legendas {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2em;
+}
+
+.cinemas-com-sessoes {
+  display: flex;
+  gap: 1em;
+
+}
+
+.cinemas-com-sessoes-titulo {
+  font-size: 1em;
+  font-weight: 500;
+  color: #eee;
+}
+
+.legendas {
+  display: flex;
+  justify-content: right;
+  width: 40%;
+  gap: 2em;
+}
+
+.legendas-wrapper {
+  gap: 1em;
+  color: #979797;
+}
+
+.legendas-wrapper-frame {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.legendas-wrapper-frame-imagem{
+  max-width: 25px;
+  max-height: 25px;
+}
+
+.bairro {
+  display: block;
+  position: relative;
+  color: #999;
+  margin-bottom: 1em;
+
+}
+
+.bairro::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  width: 95%;
+  height: 1px;
+  background-color: #666;
+
+}
+
+.bairro-titulo {
+  position: relative;
+  z-index: 10;
+  padding-right: 15px;
+  background: #333;
+  display: inline-block;
+}
+
+.lista-cinemas {
+  display: flex;
+  gap: 1%;
+}
+
+.cinema {
+  background-color: #252525;
+  width: 32%;
+  display: flex;
+  padding: 0.5em 0.5em;
+  padding-bottom: 2em;
+  border-radius: 3px;
+  position: relative;
+}
+
+.cinema-coracao{
+  margin-right: 1em;
+
+}
+
+.cinema-titulo {
+  color: #09f;
+  margin-bottom: 0.6em;
+}
+
+.cinema-endereco {
+  color: #979797;
+  font-size: 0.8em;
+}
+
+.cinema-legendas {
+  position: absolute;
+  right: 0.5em;
+}
+
+.cinema-legendas img {
+  max-width: 24px;
+  max-height: auto;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22.5px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #00CC00;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(17px);
+  -ms-transform: translateX(17px);
+  transform: translateX(17px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 3px;
+}
+
+.slider.round:before {
+  border-radius: 3px;
+}
