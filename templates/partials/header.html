@@ -2,17 +2,16 @@
     <header class="cabecalho">
         <div class="top">
             <div class="left">
-                <a id="logo" href="{% url 'index' %}">
-                        <img src="https://ingresso-a.akamaihd.net/catalog/Content/img/favicon-32x32-0dc0466d1c.png" alt="" class="image">
-                        <h1 class="titulo">ingresso.com</h1>
-                    </a>
+                <a href="{% url 'index' %}">
+                    <img class="logo" src="{% static 'icons/logo.svg' %}" alt="logo ingresso" class="image">
+                </a>
             </div>
             
             <div class="info">
                 <div><input type="search" class="info-busca" placeholder="O que deseja buscar?"></div>
-                <div class="city"><a class="info-links" href="#"><i class="fas fa-map-marker-alt"></i>Localização</a></div>
-                <div class="login"><a class="info-links" href="#"><i class="fas fa-user-plus"></i>Cadastro</a></div>
-                <div class="support"><a class="info-links"  href="#"><i class="far fa-question-circle"></i>Atendimento</a></div>
+                <div><a href="#"><h3 class="info-links city">localização</h3></a></div>
+                <div><a href="#"><h3 class="info-links login">Cadastro</h3></a></div>
+                <div><a href="#"><h3 class="info-links support">Atendimento</h3></a></div>
             </div>
     
         </div>
